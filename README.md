@@ -20,7 +20,7 @@ Selenyum Grid Çalıştırılması
  ![cmd-2](https://user-images.githubusercontent.com/46024317/63936305-310f3300-ca68-11e9-890d-ef2bf974edc9.PNG)
 4.	Görüntü yukarıdaki gibi olduktan sonra “java -jar selenium-server-standalone-3.141.59.jar -role hub” kodunu komut satırına yazarak Hub u oluşturalım.
  ![Hub](https://user-images.githubusercontent.com/46024317/63936309-31a7c980-ca68-11e9-938a-77e11610b63e.PNG)
-Kodu yazdıktan sonra görüntü yukarıdaki görünecektir.
+Kodu yazdıktan sonra komut satırı yukarıdaki gibi görünecektir.
 5.	Tarayıcı üzerinde http://localhost:4444/grid/console adresine girerek Hub un çalışıp çalışmadığını da kontrol edebiliriz.
  ![GridControl](https://user-images.githubusercontent.com/46024317/63936307-310f3300-ca68-11e9-93c7-543cbd6fd4eb.PNG)
 
