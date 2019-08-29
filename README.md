@@ -10,16 +10,20 @@ Selenium-Grid Hub ve Node’dan oluşur. Sunucu üzerinde sadece bir Hub ve bird
 Hub: Testin yürütülmesi gereken, istenilen tarayıcıyı, tarayıcı versiyonu ve işletim sistemi hakkında ki bilgileri alır ve testleri bunları sağlayan destekleyen makineye yani node’a yönlendirir. Bir örnekle Hub’ı bir müdür ve Nodeları çalışan olarak düşünelim.
 Yapılacak bir iş olduğunu ve müdürün bu iş için uygun olan çalışanı bulup elindeki bu işi yönlendirdiğini düşünelim. Hub ve Node arasındaki ilişki bu ilişkiye benzer.Bir işçi(Node) seçildikten sonra Selenium test komutları önce Hub(müdür)’a ve Hub da atanmış olan Node makineye yönlendirir. Node tarayıcıyı başlatır ve aldığı Selenium test komutlarını koşar.
 
- 
 Selenyum Grid Çalıştırılması
 1.	İlk olarak kurulum için kullanacağımız selenium-server-standalone-3.141.59.jar, web driverlar, ve node’ lar için json dosyalarını bilgisayarımız Yerel Disk C sürücüsüne kopyalıyoruz.
- 
-2.	Komut satırı uzantımız varsayılan olarak C:\Users\KullanıcıAdı olarak açılır bizim dosyalarımız Yerel Disk C içinde olduğu için cd\ komutu ile C:\ dizinine geçiyoruz.
- 
-3.	Yerel Disk C dizinine geldikten sonra “java -jar selenium-server-standalone-3.141.59.jar -role hub” kodunu komut satırına yazarak Hub u oluşturalım.
- Kodu yazdıktan sonra Hubumuz yüklenip hazır hale gelecektir.
+ ![GridFolder](https://user-images.githubusercontent.com/46024317/63936308-31a7c980-ca68-11e9-992d-b4a3a7651d68.PNG)
+2.	Belgeleri yukarıdaki gibi Yerel Disk C içine attıktan sonra Komut Satırını açıyoruz.
+ ![cmd-1](https://user-images.githubusercontent.com/46024317/63936266-12a93780-ca68-11e9-9066-3891b64bc6ee.PNG)
+
+3.	Komut satırı uzantımız varsayılan olarak C:\Users\KullanıcıAdı olarak açılır bizim dosyalarımız Yerel Disk C içinde olduğu için cd\ komutu ile C:\ dizinine geçiyoruz.
+ ![cmd-2](https://user-images.githubusercontent.com/46024317/63936305-310f3300-ca68-11e9-890d-ef2bf974edc9.PNG)
+4.	Görüntü yukarıdaki gibi olduktan sonra “java -jar selenium-server-standalone-3.141.59.jar -role hub” kodunu komut satırına yazarak Hub u oluşturalım.
+ ![Hub](https://user-images.githubusercontent.com/46024317/63936309-31a7c980-ca68-11e9-938a-77e11610b63e.PNG)
+Kodu yazdıktan sonra görüntü yukarıdaki görünecektir.
 5.	Tarayıcı üzerinde http://localhost:4444/grid/console adresine girerek Hub un çalışıp çalışmadığını da kontrol edebiliriz.
- 
+ ![GridControl](https://user-images.githubusercontent.com/46024317/63936307-310f3300-ca68-11e9-93c7-543cbd6fd4eb.PNG)
+Görüntümüz yukarıdaki gibiyse sıkıntı yok demektir.
 6.	Hub’ umuz sıkıntısız şekilde çalışıyor şimdi nodeları çalıştırabiliriz. Açık olan komut satırını kapatmayıp yeni komut satırı açıyoruz. cd\ komutu ile Yerel Disk C dizinine geçiyoruz.
 Chrome Driver Eklemek İçin;
 java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig ChromeNode.json -hub http://localhost:4444/grid/register/
@@ -34,28 +38,13 @@ java -Dwebdriver.firefox.driver="C:\geckodriver.exe" -jar selenium-server-standa
 java -Dwebdriver.ie.driver="C:\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig IENode.json -hub http://localhost:4444/grid/register/
 
 kodlarını komut satırına yazarak istediğimiz driveri node olarak ekleyebiliriz. Ben örnek olması açısından farklı komut satırları açarak bütün Driverleri node olarak ekledim.
-C:\>java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig ChromeNode.json -hub http://localhost:4444/grid/register/
-
-13:31:58.126 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-13:31:58.230 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 17534
-2019-08-29 13:31:59.211:INFO::main: Logging initialized @1280ms to org.seleniumhq.jetty9.util.log.StdErrLog
-13:31:59.440 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-13:31:59.522 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 17534
-13:31:59.522 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
-13:31:59.842 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
-13:32:00.050 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
-13:32:00.358 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
-
+![cmd-3](https://user-images.githubusercontent.com/46024317/63936306-310f3300-ca68-11e9-82c9-f1deaaf99789.PNG)
 7.	Ekledikten sonra komut satırının görüntüsü yukarıdaki gibi olmalıdır.
-
 http://localhost:4444/grid/console adresinde ise eğer hepsini eklediyseniz görüntü aşağıdaki gibi olacaktır.
- 
-
+ ![SeleniumGrid-2](https://user-images.githubusercontent.com/46024317/63936312-32406000-ca68-11e9-9596-8a427547a236.PNG)
 8.	Node’ları da ekledikten sonra şimdi test etmeye başlayabiliriz. Açık olan komut satırlarını kapatmadan Visual studio üzerinde yeni bir Nunit test projesi açalım ve Nuget Packages kullanarak Selenium.Firefox.WebDriver, Selenium.WebDriver, Selenium.WebDriver.ChromeDriver, Selenium.WebDriver.IEDriver paketlerini yükleyelim.
 9.	Test Classımıza OpenQA.Selenium, OpenQA.Selenium.Remote, OpenQA.Selenium.Chrome, OpenQA.Selenium.IE, OpenQA.Selenium.Edge, OpenQA.Selenium.Firefox namespace lerini ekleyelim. Şimdi Testlerimizi Yazmaya başlayabiliriz.
-
- 
-
+![Remote](https://user-images.githubusercontent.com/46024317/63936310-31a7c980-ca68-11e9-83a7-5409695466b1.PNG)
 10.	Yukarıdaki fotoğrafta görüldüğü gibi her driver için bir test metodu açıp testleri gerçekleştirdik.
 11.	Kısaca bir driver için yazdığımız kodları açıklayayım;
 - İlk olarak IWebDriver driver koduyla driverimizi oluşturuyoruz.
