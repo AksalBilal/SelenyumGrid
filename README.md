@@ -52,11 +52,11 @@ Yukarıdaki kodlardan herhangi birini komut satırına yazarak istediğimiz driv
 ![cmd-3](https://user-images.githubusercontent.com/46024317/63936306-310f3300-ca68-11e9-82c9-f1deaaf99789.PNG)
 7.	Ekledikten sonra komut satırının görüntüsü yukarıdaki gibi olmalıdır. http://localhost:4444/grid/console adresinde ise eğer hepsini eklediyseniz görüntü aşağıdaki gibi olacaktır.
  ![SeleniumGrid-2](https://user-images.githubusercontent.com/46024317/63936312-32406000-ca68-11e9-9596-8a427547a236.PNG)
- Bir Node üzerinde bir tarayıcı olabileceği gibi birden fazla tarayıcı da olabilir. Birden fazla tarayıcıyı aynı anda eklemek için;
+ Bir Node içerisinde bir tarayıcı olabileceği gibi birden fazla tarayıcı da olabilir. Birden fazla tarayıcıyı aynı anda eklemek için;
 
 "java -Dwebdriver.chrome.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig win-node-conf.json -hub http://192.168.1.104:4444/grid/register -port 5454"   kodunu kullanabiliriz.
  ![SeleniumGrid-3](https://user-images.githubusercontent.com/46024317/63937388-f8bd2400-ca6a-11e9-9403-fdb6dace6634.PNG)
-Birden fazla tarayıcıyı aynı anda eklersek node görünümü yukarıdaki şekilde olacaktır.
+Birden fazla tarayıcıyı aynı anda eklersek node görünümü yukarıdaki gibi olacaktır.
 
 8.	Node’ları da ekledikten sonra şimdi test etmeye başlayabiliriz. Açık olan komut satırlarını kapatmadan Visual studio üzerinde yeni bir Nunit test projesi açalım ve Nuget Packages kullanarak Selenium.Firefox.WebDriver, Selenium.WebDriver, Selenium.WebDriver.ChromeDriver, Selenium.WebDriver.IEDriver paketlerini yükleyelim.
 9.	Test Classımıza OpenQA.Selenium, OpenQA.Selenium.Remote, OpenQA.Selenium.Chrome, OpenQA.Selenium.IE, OpenQA.Selenium.Edge, OpenQA.Selenium.Firefox namespace lerini ekleyelim. Şimdi Testlerimizi Yazmaya başlayabiliriz.
