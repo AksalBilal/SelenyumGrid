@@ -39,9 +39,13 @@ Firefox driver eklemek için ==>
 İnternet Explorer driver Eklemek için==>
 "java -Dwebdriver.ie.driver="C:\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig IENode.json -hub http://localhost:4444/grid/register/"
 Kodun Genel Hali ; java -Dwebdriver.ie.driver="PATH" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig JSONNAME.json -hub http://localhost:4444/grid/register/ şeklinde olup
+
 PATH: driverin bilgisayarınızdaki konumudur
+
 JSONNAME: node için oluşturmuş olduğunuz json dosyasının adıdır.
+
  ![Json](https://user-images.githubusercontent.com/46024317/63937777-e2fc2e80-ca6b-11e9-80d7-f15964262397.PNG)
+ 
 Örnek json dosyası yukarıdaki gibidir.
 
 Yukarıdaki kodlardan herhangi birini komut satırına yazarak istediğimiz driveri node olarak ekleyebiliriz. Ben örnek olması açısından farklı komut satırları açarak bütün Driverleri node olarak ekledim.
