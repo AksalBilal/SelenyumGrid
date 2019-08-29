@@ -25,6 +25,7 @@ Kodu yazdıktan sonra görüntü yukarıdaki görünecektir.
  ![GridControl](https://user-images.githubusercontent.com/46024317/63936307-310f3300-ca68-11e9-93c7-543cbd6fd4eb.PNG)
 
 Görüntümüz yukarıdaki gibiyse sıkıntı yok demektir.
+
 6.	Hub’ umuz sıkıntısız şekilde çalışıyor şimdi nodeları çalıştırabiliriz. Açık olan komut satırını kapatmayıp yeni komut satırı açıyoruz. cd\ komutu ile Yerel Disk C dizinine geçiyoruz.
 Chrome Driver Eklemek İçin ==>
 "java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig ChromeNode.json -hub http://localhost:4444/grid/register/"
