@@ -10,7 +10,12 @@ Selenium-Grid Hub ve Node’dan oluşur. Sunucu üzerinde sadece bir Hub ve bird
 Hub: Testin yürütülmesi gereken, istenilen tarayıcıyı, tarayıcı versiyonu ve işletim sistemi hakkında ki bilgileri alır ve testleri bunları sağlayan destekleyen makineye yani node’a yönlendirir. Bir örnekle Hub’ı bir müdür ve Nodeları çalışan olarak düşünelim.
 Yapılacak bir iş olduğunu ve müdürün bu iş için uygun olan çalışanı bulup elindeki bu işi yönlendirdiğini düşünelim. Hub ve Node arasındaki ilişki bu ilişkiye benzer.Bir işçi(Node) seçildikten sonra Selenium test komutları önce Hub(müdür)’a ve Hub da atanmış olan Node makineye yönlendirir. Node tarayıcıyı başlatır ve aldığı Selenium test komutlarını koşar.
 
-Selenyum Grid Çalıştırılması
+![SelenyumGridŞeması](https://user-images.githubusercontent.com/46024317/63938714-28216000-ca6e-11e9-94d6-8815199f4872.png)
+
+Çalışma Mantığı yukarıdaki resimdeki gibidir.
+
+                                               Selenyum Grid Uygulaması
+                                               
 1.	İlk olarak kurulum için kullanacağımız selenium-server-standalone-3.141.59.jar, web driverlar, ve node’ lar için json dosyalarını bilgisayarımız Yerel Disk C sürücüsüne kopyalıyoruz.
 
  ![GridFolder](https://user-images.githubusercontent.com/46024317/63936308-31a7c980-ca68-11e9-992d-b4a3a7651d68.PNG)
