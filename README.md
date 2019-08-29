@@ -68,6 +68,6 @@ Birden fazla tarayıcıyı aynı anda eklersek node görünümü yukarıdaki gib
 -driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), capabilities); koduyla driverimizi Hub’ a bağlıyoruz.
 - driver.Navigate().GoToUrl("https://www.google.com"); koduyla driveri test etmek için url yönlendirmesi yapıyoruz.
 
-12.	Test leri Çalıştırdığımız zaman ilgili driverin açılıp Google.com sitesine yönlendirildiğini görüyoruz. Bunları yaparken bizim oluşturmuş olduğumuz node’ları bağlanarak işlemi gerçekleştirdiğini görüyoruz.
+12.	Test leri Çalıştırdığımız zaman ilgili driverin açılıp Google.com sitesine yönlendirildiğini görüyoruz. Bunları yaparken bizim oluşturmuş olduğumuz node’lara bağlanarak işlemi gerçekleştirdiğini görüyoruz.
 
 
