@@ -1,0 +1,15 @@
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\SeleniumGrid.deps.json
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\SeleniumGrid.runtimeconfig.json
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\SeleniumGrid.runtimeconfig.dev.json
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\SeleniumGrid.dll
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.csprojAssemblyReference.cache
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.csproj.CoreCompileInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.AssemblyInfoInputs.cache
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.AssemblyInfo.cs
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\bin\Debug\netcoreapp2.1\SeleniumGrid.pdb
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.dll
+C:\Users\bilal\OneDrive\Masaüstü\SeleniumGrid\SeleniumGrid\obj\Debug\netcoreapp2.1\SeleniumGrid.pdb

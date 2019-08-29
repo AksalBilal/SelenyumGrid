@@ -1,0 +1,27 @@
+Kullanacağınız jar dosyası ve driver.exe dosyalarını yerel disk C içine taşıyın
+ilk başta komut satırını açıp cd\ komutu ile Yerel disk c klasörüne geçiyoruz.
+==>java -jar selenium-server-standalone-3.141.59.jar -role hub kodu ile kökümüzü oluşturuyoruz
+Path => eklemek istediginiz driverin yolu
+selenium-server-standalone-3.141.59.jar => jar dosyası
+ıpadress => Gridin size tanımladığı ip adresi
+Yeni driver eklemek için :java -Dwebdriver.chrome.driver="Path" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://Ipadress/grid/register -port 5454
+
+Edge driver eklemek için => java -Dwebdriver.chrome.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register -port 5454
+==> java -Dwebdriver.edge.driver="C:\MicrosoftWebDriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig EdgeNode.json -hub http://localhost:4444/grid/register/
+
+Chrome driver eklemek için => java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register -port 5454
+==> java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig ChromeNode.json -hub http://localhost:4444/grid/register/
+
+Firefox driver eklemek için => java -Dwebdriver.chrome.driver="C:\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register -port 5454
+==> java -Dwebdriver.firefox.driver="C:\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig FirefoxNode.json -hub http://localhost:4444/grid/register/
+
+IE driver eklemek için => java -Dwebdriver.chrome.driver="C:\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.104:4444/grid/register -port 5454
+==>java -Dwebdriver.ie.driver="C:\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig IENode.json -hub http://localhost:4444/grid/register/
+
+
+
+java -Dwebdriver.chrome.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig win-node-conf.json -hub http://192.168.1.104:4444/grid/register -port 5456
+
+java -Dwebdriver.edge.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node nodeConfig EdgeNode.json -hub http://192.168.1.104:4444/grid/register -port 5454
+ java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub-conf.json
+ java -Dwebdriver.edge.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig EdgeNode.json -hub http://localhost:4444/grid/register/
