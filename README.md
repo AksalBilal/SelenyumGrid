@@ -66,8 +66,8 @@ Yukarıdaki kodlardan herhangi birini komut satırına yazarak istediğimiz driv
 
  ![SeleniumGrid-2](https://user-images.githubusercontent.com/46024317/63936312-32406000-ca68-11e9-9596-8a427547a236.PNG)
  
- Bir Node içerisinde bir tarayıcı olabileceği gibi birden fazla tarayıcı da olabilir. Birden fazla tarayıcıyı aynı anda eklemek için;
-
+ Bir Node içerisinde bir tarayıcı olabileceği gibi birden fazla tarayıcı da olabilir. 
+ Birden fazla tarayıcıyı aynı anda eklemek için ==>
 "java -Dwebdriver.chrome.driver="C:\msedgedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig win-node-conf.json -hub http://192.168.1.104:4444/grid/register -port 5454"   kodunu kullanabiliriz.
 
  ![SeleniumGrid-3](https://user-images.githubusercontent.com/46024317/63937388-f8bd2400-ca6a-11e9-9403-fdb6dace6634.PNG)
