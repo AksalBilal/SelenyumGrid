@@ -36,7 +36,7 @@ Edge driver eklemek için ==>
 Firefox driver eklemek için ==>
 "java -Dwebdriver.firefox.driver="C:\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig FirefoxNode.json -hub http://localhost:4444/grid/register/"
 
-İnternet Explorer driver Eklemek için;
+İnternet Explorer driver Eklemek için==>
 "java -Dwebdriver.ie.driver="C:\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig IENode.json -hub http://localhost:4444/grid/register/"
 Kodun Genel Hali ; java -Dwebdriver.ie.driver="PATH" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig JSONNAME.json -hub http://localhost:4444/grid/register/ şeklinde olup
 PATH: driverin bilgisayarınızdaki konumudur
