@@ -41,6 +41,7 @@ Kodu yazdıktan sonra komut satırı yukarıdaki gibi görünecektir.
 Görüntümüz yukarıdaki gibiyse sıkıntı yok demektir.
 
 6.	Hub’ umuz sıkıntısız şekilde çalışıyor şimdi nodeları çalıştırabiliriz. Açık olan komut satırını kapatmayıp yeni komut satırı açıyoruz. cd\ komutu ile Yerel Disk C dizinine geçiyoruz.
+
 Chrome Driver Eklemek İçin ==>
 "java -Dwebdriver.chrome.driver="C:\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig ChromeNode.json -hub http://localhost:4444/grid/register/"
 
